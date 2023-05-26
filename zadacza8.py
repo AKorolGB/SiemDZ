@@ -8,11 +8,9 @@ n = int(input("Введите размер n долек:  "))
 m = int(input('Введите размер m долек:  '))
 k = int(input('Колчество долек котороенужно отломить к: '))
 
-if k%n == 0 and k<=n*m:
+if k % n == 0 and k <= n * m:
     print('Да')
-elif k%m == 0 and k<=n*m:
+elif k % m == 0 and k <= n * m:
     print('Да')
 else:
     print('Нет')
-
-
