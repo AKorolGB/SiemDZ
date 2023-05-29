@@ -1,26 +1,38 @@
-
 # Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. Петя помогает Кате по математике.
 # Он задумывает два натуральных числа X и Y (X,Y≤1000),
 # а Катя должна их отгадать. Для этого Петя делает две подсказки.
 # Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать задуманные Петей числа.
-import random
-x = random.randint(1, 10)
-y = random.randint(1, 10)
-s = x + y
-p = x * y
-print(f'Сумма чисел :{s}')
-print(f'Произведение чисел :{p}')
-if x > y:
-    print('Первое число больше')
-else:
-    print('Второе число больше')
-answerx = int(input('Введите число х:'))
-answery = int(input('Введите число y:'))
+# import random
+# x = random.randint(1, 10)
+# y = random.randint(1, 10)
+# s = x + y
+# p = x * y
+# print(f'Сумма чисел :{s}')
+# print(f'Произведение чисел :{p}')
+# if x > y:
+#     print('Первое число больше')
+# else:
+#     print('Второе число больше')
+# answerx = int(input('Введите число х:'))
+# answery = int(input('Введите число y:'))
+#
+# if answerx == x and answery == y:
+#     print('Вы угадали!')
+# else:
+#     print('Вы не угадали!')
+#     print(x)
+#     print(y)
 
-if answerx == x and answery == y:
-    print('Вы угадали!')
-else:
-    print('Вы не угадали!')
-    print(x)
-    print(y)
 
+s = int(input('Введите сумму чисел: '))
+p = int(input('Введите произведение чисел: '))
+
+x = 1
+while x <= s:
+    if s - x == p/x:
+        break
+    x += 1
+
+
+y = s - x
+print("Числа x и y:", x, y)
