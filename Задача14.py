@@ -8,4 +8,3 @@ while two <= n:
     two = 2 ** k
 
     print(two)
-
