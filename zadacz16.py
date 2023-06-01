@@ -12,10 +12,12 @@ for i in range(n):
     list.append(random.randint(1, 100))
     i = i + 1
 print(list)
-sum = 0
+# sum = 0
+# x = int(input('Введите число, которое нужно найти в списке: '))
+# for i in range(n):
+#     if x == list[i]:
+#         sum = sum + 1
+#         print(f'Число {x} находится в индексе {i}')
+# print(f'Число {x} встречаеться {sum} раз')
 x = int(input('Введите число, которое нужно найти в списке: '))
-for i in range(n):
-    if x == list[i]:
-        sum = sum + 1
-        print(f'Число {x} находится в индексе {i}')
-print(f'Число {x} встречаеться {sum} раз')
+print(list.count(x))
